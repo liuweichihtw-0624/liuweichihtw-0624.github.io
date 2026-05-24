@@ -1,125 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Wei-Chih LIU</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8f9fa;
-            color: #333;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            max-width: 640px;
-            width: 90%;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            color: #1a1a2e;
-            margin-bottom: 1.5rem;
-        }
-        .divider {
-            width: 40px;
-            height: 3px;
-            background: #4a90d9;
-            margin: 0 auto 1.5rem;
-            border-radius: 2px;
-        }
-        .title {
-            font-size: 0.95rem;
-            color: #666;
-            line-height: 2;
-            margin-bottom: 2.5rem;
-        }
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-            margin-bottom: 2.5rem;
-        }
-        .link-btn {
-            display: inline-block;
-            padding: 0.5rem 1.25rem;
-            border: 1.5px solid #ddd;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #444;
-            font-size: 0.9rem;
-            background: white;
-            transition: all 0.2s;
-        }
-        .link-btn:hover {
-            border-color: #4a90d9;
-            color: #4a90d9;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(74,144,217,0.15);
-        }
-        .notes-section {
-            padding-top: 2rem;
-            border-top: 1px solid #eee;
-        }
-        .notes-label {
-            font-size: 0.85rem;
-            color: #999;
-            margin-bottom: 0.75rem;
-        }
-        .notes-btn {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            background: #1a1a2e;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-        .notes-btn:hover { background: #2d2d4e; }
-        footer {
-            margin-top: 2.5rem;
-            font-size: 0.8rem;
-            color: #bbb;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Michael Wei-Chih LIU</h1>
-        <div class="divider"></div>
-        <p class="title">
-            Health Technology Assessment (HTA) Researcher<br>
-            Ph.D in Public Health (International Health)<br>
-            Master in Clinical Pharmacy &nbsp;·&nbsp; Bachelor in Pharmacy
-        </p>
+---
+layout: default
+description: "From science to society — curiosity is my compass. HTA 研究者 Michael Wei-Chih Liu 的個人網站。"
+---
 
-        <div class="links">
-            <a class="link-btn" href="https://liuweichihtaiwan.medium.com/" target="_blank">Medium</a>
-            <a class="link-btn" href="https://dailymichelle.substack.com/" target="_blank">Substack</a>
-            <a class="link-btn" href="https://matters.news/@wcliuym" target="_blank">Matters</a>
-            <a class="link-btn" href="https://vocus.cc/user/5a11e61beceaed97b401a18b" target="_blank">Vocus</a>
-            <a class="link-btn" href="https://liker.social/@wcliu" target="_blank">Liker.social</a>
-            <a class="link-btn" href="https://www.facebook.com/lu.michelle.2020/" target="_blank">Facebook</a>
-            <a class="link-btn" href="https://twitter.com/TW_Michelle624" target="_blank">Twitter / X</a>
-            <a class="link-btn" href="https://www.notion.so/Public-Michael-Wei-Chih-LIU-f9f5bf4f0448461e9832999112966361" target="_blank">Notion</a>
-        </div>
+<div class="container">
 
-        <div class="notes-section">
-            <p class="notes-label">📚 個人知識庫</p>
-            <a class="notes-btn" href="https://liuweichihtw-0624.github.io/notes">
-                My Second Brain — Notes &amp; Insights
-            </a>
-        </div>
+  <!-- ── Hero ───────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-name">Michael Wei-Chih Liu</h1>
+      <span class="hero-name-zh">劉威志</span>
 
-        <footer>michaelweichihliu.tw</footer>
+      <div class="hero-tagline">
+        <p class="hero-tagline-zh">從科學到社會，好奇心是我探索世界的羅盤。</p>
+        <p class="hero-tagline-en">From science to society — curiosity is my compass.</p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="/about"    class="btn btn-primary">關於我 About →</a>
+        <a href="/research" class="btn btn-outline">研究 Research</a>
+        <a href="/writing"  class="btn btn-outline">寫作 Writing</a>
+      </div>
     </div>
-</body>
-</html>
+
+    <div class="hero-avatar">
+      <img src="/assets/images/avatar.png" alt="Michael Wei-Chih Liu" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ── About Snippet ──────────────────────────────────── -->
+  <section class="section">
+    <div class="section-title">
+      <h2>關於我</h2><span class="en">About</span>
+    </div>
+    <div class="bio-block">
+      <p class="zh">生命的每一個轉折，都在累積成現在的我。從藥學、臨床藥學、國際衛生，到醫療科技評估（Health Technology Assessment, HTA），每一步都拓寬了我看世界的視角。探索從未止步於專業——藝術、人文、歷史、社會，乃至科技與社會的深層互動，同樣是我理解這個世界不可或缺的座標。在這段短暫的人生中，我希望帶著好奇，持續深探，留下值得回顧的足跡。</p>
+      <p class="en">Every chapter of my journey has shaped who I am today — from pharmacy and clinical pharmacy, to global health, and Health Technology Assessment (HTA). My curiosity extends beyond the professional: art, humanities, history, and society — and the profound interplay of science, technology, and society — are equally essential lenses through which I understand the world. In this brief life, I hope to keep exploring with wonder, and leave behind something worth looking back on.</p>
+    </div>
+    <div style="margin-top:1.5rem;">
+      <a href="/about" class="btn btn-outline">閱讀更多 Read More →</a>
+    </div>
+  </section>
+
+  <!-- ── Latest Writing ─────────────────────────────────── -->
+  <section class="section">
+    <div class="section-title">
+      <h2>最新寫作</h2><span class="en">Latest Writing</span>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;">
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:0.25rem;">Vocus HTAtw</h3>
+          <p style="font-size:0.875rem;color:var(--text-muted);">醫療科技評估評論與分析 · HTA Commentary &amp; Analysis</p>
+        </div>
+        <span class="tag-active">✦ 現役 Active</span>
+      </div>
+      <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:0.5rem;">關於 HTA、藥物政策、實證醫學的中文評論與研究分析。</p>
+      <p style="font-size:0.82rem;color:var(--text-muted);font-style:italic;margin-bottom:1.5rem;">Chinese commentary and research analysis on HTA, pharmaceutical policy, and evidence-based medicine.</p>
+      <a href="https://vocus.cc/salon/HTAtw" target="_blank" rel="noopener" class="btn btn-primary">前往閱讀 Read Now →</a>
+    </div>
+    <div style="margin-top:1rem;">
+      <a href="/writing" class="btn btn-outline">所有寫作 All Writing →</a>
+    </div>
+  </section>
+
+  <!-- ── Academic Profiles ──────────────────────────────── -->
+  <section class="section">
+    <div class="section-title">
+      <h2>學術識別</h2><span class="en">Academic Profiles</span>
+    </div>
+    <div class="badge-grid">
+      <a href="https://orcid.org/0000-0003-3449-5286"                        target="_blank" rel="noopener" class="badge"><span class="icon">🔬</span> ORCID</a>
+      <a href="https://www.researchgate.net/profile/Michael-Wei-Chih-Liu"    target="_blank" rel="noopener" class="badge"><span class="icon">📊</span> ResearchGate</a>
+      <a href="https://nycu.academia.edu/MichaelWeiChihLIU"                  target="_blank" rel="noopener" class="badge"><span class="icon">🎓</span> Academia.edu</a>
+      <a href="https://www.linkedin.com/in/michaelweichihliu/"               target="_blank" rel="noopener" class="badge"><span class="icon">💼</span> LinkedIn</a>
+    </div>
+    <div style="margin-top:1.5rem;">
+      <a href="/research" class="btn btn-outline">研究詳情 Research →</a>
+    </div>
+  </section>
+
+</div>

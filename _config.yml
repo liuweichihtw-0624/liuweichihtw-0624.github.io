@@ -1,0 +1,24 @@
+title: Michael Wei-Chih Liu
+title_zh: 劉威志
+description: "From science to society — curiosity is my compass."
+description_zh: "從科學到社會，好奇心是我探索世界的羅盤。"
+url: "https://michaelweichihliu.tw"
+baseurl: ""
+
+author:
+  name: Michael Wei-Chih Liu
+  name_zh: 劉威志
+  email: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - .gitignore
