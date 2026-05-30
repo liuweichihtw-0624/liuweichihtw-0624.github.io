@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="container">
+  <article class="post">
+
+    <!-- ── Post Header ──────────────────────────────────── -->
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%Y 年 %m 月 %d 日" }}
+        </time>
+        {% if page.syndicate and page.syndicate != empty %}
+        <span class="post-syndicated">· 已散播 Syndicated</span>
+        {% endif %}
+      </div>
+
+      <h1 class="post-title">{{ page.title }}</h1>
+
+      {% if page.subtitle %}
+      <p class="post-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+
+      {% if page.tags and page.tags != empty %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <span class="badge">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    <!-- ── Post Content ──────────────────────────────────── -->
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <!-- ── Post Footer ───────────────────────────────────── -->
+    <footer class="post-footer">
+      <div class="post-footer-inner">
+        <a href="{{ '/writing' | relative_url }}" class="btn btn-outline">
+          ← 回到寫作 Back to Writing
+        </a>
+        {% if page.syndicate %}
+        <div class="post-share">
+          <span style="font-size:0.8rem;color:var(--text-muted);">散播至 Shared to：</span>
+          {% for platform in page.syndicate %}
+          <span class="badge">{{ platform }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </footer>
+
+  </article>
+</div>

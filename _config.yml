@@ -15,6 +15,19 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+# Plugins
+plugins:
+  - jekyll-feed
+
+# RSS Feed settings
+feed:
+  title: "Michael Wei-Chih Liu — 寫作"
+  description: "From science to society — curiosity is my compass."
+  path: feed.xml
+
+# Permalink structure for posts
+permalink: /writing/:year/:month/:day/:title/
+
 # Exclude from processing
 exclude:
   - Gemfile

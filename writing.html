@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 寫作 Writing
-description: "Michael Wei-Chih Liu 的寫作平台、文章典藏與電子報。"
+description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
 ---
 
 <div class="container">
@@ -10,6 +10,48 @@ description: "Michael Wei-Chih Liu 的寫作平台、文章典藏與電子報。
     <h1>寫作 <span style="font-weight:300;color:var(--text-muted);">Writing</span></h1>
     <p class="subtitle">文字是思考的痕跡。· Writing is the trace of thinking.</p>
   </div>
+
+  <!-- ── 本站文章 ─────────────────────────────────────── -->
+  <section>
+    <div class="section-title">
+      <h2>本站文章</h2><span class="en">Articles</span>
+      <a href="{{ '/feed.xml' | relative_url }}" class="badge" style="margin-left:auto;" title="訂閱 RSS Feed">
+        <span class="icon">📡</span> RSS
+      </a>
+    </div>
+
+    {% if site.posts.size > 0 %}
+    <div class="post-list">
+      {% for post in site.posts %}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          {% if post.tags and post.tags != empty %}
+          <div class="post-card-tags">
+            {% for tag in post.tags limit:3 %}
+            <span class="badge" style="font-size:0.7rem;padding:0.15rem 0.5rem;">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <h3 class="post-card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        {% if post.excerpt %}
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="card" style="opacity:0.7;">
+      <p style="color:var(--text-secondary);">第一篇文章即將發表。</p>
+      <p style="color:var(--text-muted);font-size:0.875rem;font-style:italic;">First article coming soon.</p>
+    </div>
+    {% endif %}
+  </section>
+
+  <div class="divider"></div>
 
   <!-- ── Active Platform ────────────────────────────────── -->
   <section>
