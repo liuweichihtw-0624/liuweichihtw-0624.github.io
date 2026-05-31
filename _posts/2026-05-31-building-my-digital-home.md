@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 從零開始，一步一步把自己放上網路 · Building My Digital Home, Step by Step
-date: 2026-06-01
+date: 2026-05-31
 tags:
   - 個人網站
   - AI協作
