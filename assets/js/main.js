@@ -104,7 +104,8 @@ if (navToggle && navLinks) {
 
   var shareCopy = document.getElementById('share-copy');
   if (shareCopy) shareCopy.addEventListener('click', function() {
-    navigator.clipboard.writeText(window.location.href).then(function() {
+    var cleanUrl = window.location.origin + window.location.pathname;
+    navigator.clipboard.writeText(cleanUrl).then(function() {
       shareCopy.classList.add('copied');
       var orig = shareCopy.getAttribute('title');
       shareCopy.setAttribute('title', '已複製！Copied!');
