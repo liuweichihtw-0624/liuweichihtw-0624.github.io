@@ -14,6 +14,7 @@ layout: default
         {% if page.syndicate and page.syndicate != empty %}
         <span class="post-syndicated">· 已散播 Syndicated</span>
         {% endif %}
+        <a href="#comments" class="post-comment-jump">💬 留言 Comments</a>
       </div>
 
       <h1 class="post-title">{{ page.title }}</h1>
@@ -54,7 +55,7 @@ layout: default
     </footer>
 
     <!-- ── Comments ─────────────────────────────────────── -->
-    <section class="comments-section">
+    <section class="comments-section" id="comments">
       <div class="section-title" style="margin-top:3rem;">
         <h2>留言</h2><span class="en">Comments</span>
       </div>
@@ -62,16 +63,39 @@ layout: default
         歡迎留下你的想法或提問，留言將在審核後顯示。·
         <em>Leave a comment or question — comments appear after moderation.</em>
       </p>
-      <div id="cusdis_thread"
-        data-host="https://cusdis.com"
-        data-app-id="c467ab19-788f-45d8-8f25-d6b7ee9bef55"
-        data-page-id="{{ page.url }}"
-        data-page-url="{{ site.url }}{{ page.url }}"
-        data-page-title="{{ page.title }}"
-        data-theme="light"
-      ></div>
+      <div class="cusdis-wrapper">
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="c467ab19-788f-45d8-8f25-d6b7ee9bef55"
+          data-page-id="{{ page.url }}"
+          data-page-url="{{ site.url }}{{ page.url }}"
+          data-page-title="{{ page.title }}"
+          data-theme="light"
+        ></div>
+      </div>
+      <script>
+        (function() {
+          var el = document.getElementById('cusdis_thread');
+          if (el) {
+            var saved = localStorage.getItem('mwcl-theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            el.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+          }
+        })();
+      </script>
       <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </section>
 
   </article>
+</div>
+
+<!-- ── Floating Sidebar ──────────────────────────────────── -->
+<div class="post-float-sidebar" id="post-float-sidebar">
+  <a href="#comments" class="float-btn float-btn-comment" title="跳到留言 Jump to Comments">💬</a>
+  <div class="float-divider"></div>
+  <button class="float-btn" id="share-x" title="分享到 X (Twitter)">𝕏</button>
+  <button class="float-btn" id="share-linkedin" title="分享到 LinkedIn">in</button>
+  <button class="float-btn" id="share-facebook" title="分享到 Facebook">f</button>
+  <button class="float-btn" id="share-email" title="Email 分享 Share via Email">✉</button>
+  <button class="float-btn" id="share-copy" title="複製連結 Copy Link">🔗</button>
 </div>

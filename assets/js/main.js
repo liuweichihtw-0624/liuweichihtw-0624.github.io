@@ -62,3 +62,68 @@ if (navToggle && navLinks) {
     else if (!isHome && path.startsWith(href)) link.classList.add('active');
   });
 })();
+
+// ── Floating Sidebar & Share ──────────────────────────────
+
+(function initPostFeatures() {
+  const sidebar = document.getElementById('post-float-sidebar');
+  if (!sidebar) return;
+
+  // Show sidebar after scrolling 300px
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) sidebar.classList.add('is-visible');
+    else sidebar.classList.remove('is-visible');
+  }, { passive: true });
+
+  const pageUrl   = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  function openShare(url) {
+    window.open(url, '_blank', 'width=600,height=480,noopener,noreferrer');
+  }
+
+  var shareX = document.getElementById('share-x');
+  if (shareX) shareX.addEventListener('click', function() {
+    openShare('https://x.com/intent/tweet?url=' + pageUrl + '&text=' + pageTitle);
+  });
+
+  var shareLinkedin = document.getElementById('share-linkedin');
+  if (shareLinkedin) shareLinkedin.addEventListener('click', function() {
+    openShare('https://www.linkedin.com/sharing/share-offsite/?url=' + pageUrl);
+  });
+
+  var shareFacebook = document.getElementById('share-facebook');
+  if (shareFacebook) shareFacebook.addEventListener('click', function() {
+    openShare('https://www.facebook.com/sharer/sharer.php?u=' + pageUrl);
+  });
+
+  var shareEmail = document.getElementById('share-email');
+  if (shareEmail) shareEmail.addEventListener('click', function() {
+    window.location.href = 'mailto:?subject=' + pageTitle + '&body=' + pageUrl;
+  });
+
+  var shareCopy = document.getElementById('share-copy');
+  if (shareCopy) shareCopy.addEventListener('click', function() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      shareCopy.classList.add('copied');
+      var orig = shareCopy.getAttribute('title');
+      shareCopy.setAttribute('title', '已複製！Copied!');
+      setTimeout(function() {
+        shareCopy.classList.remove('copied');
+        shareCopy.setAttribute('title', orig);
+      }, 2000);
+    });
+  });
+
+  // Sync Cusdis theme when user toggles dark/light mode
+  var cusdisEl = document.getElementById('cusdis_thread');
+  if (cusdisEl && toggleBtn) {
+    toggleBtn.addEventListener('click', function() {
+      setTimeout(function() {
+        var theme = html.getAttribute('data-theme') || 'light';
+        cusdisEl.setAttribute('data-theme', theme);
+        if (window.CUSDIS) window.CUSDIS.renderTo(cusdisEl);
+      }, 50);
+    });
+  }
+})();
