@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "當指定捐款變成單向通知——我與台灣某NGO的一日經歷 · When Designated Donations Become One-Way Notifications: My Experience with a Taiwan NGO"
-date: 2026-06-01
+date: 2026-06-01 18:35:00 +0800
 tags: [公益治理, 人文, 個人成長, 捐款倫理]
 publish: true
 syndicate: [linkedin]

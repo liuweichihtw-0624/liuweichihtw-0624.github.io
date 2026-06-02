@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "透過 Email 發送部落格貼文：自動化流程的實驗與反思 · Sending Blog Posts via Email: Experiments and Reflections on Automation Workflows"
-date: 2026-05-31
+date: 2026-05-31 13:27:00 +0800
 tags: [知識管理, AI, 科技, 個人成長]
 publish: true
 syndicate: [linkedin]

@@ -9,7 +9,7 @@ layout: default
     <header class="post-header">
       <div class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}">
-          {{ page.date | date: "%Y 年 %m 月 %d 日" }}
+          {{ page.date | date: "%Y 年 %m 月 %d 日" }}{% assign post_time = page.date | date: "%H:%M" %}{% if post_time != "00:00" %} · {{ post_time }}{% endif %}
         </time>
         {% if page.syndicate and page.syndicate != empty %}
         <span class="post-syndicated">· 已散播 Syndicated</span>
@@ -52,6 +52,26 @@ layout: default
         {% endif %}
       </div>
     </footer>
+
+    <!-- ── Comments ─────────────────────────────────────── -->
+    <section class="comments-section">
+      <div class="section-title" style="margin-top:3rem;">
+        <h2>留言</h2><span class="en">Comments</span>
+      </div>
+      <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.5rem;">
+        歡迎留下你的想法或提問，留言將在審核後顯示。·
+        <em>Leave a comment or question — comments appear after moderation.</em>
+      </p>
+      <div id="cusdis_thread"
+        data-host="https://cusdis.com"
+        data-app-id="c467ab19-788f-45d8-8f25-d6b7ee9bef55"
+        data-page-id="{{ page.url }}"
+        data-page-url="{{ site.url }}{{ page.url }}"
+        data-page-title="{{ page.title }}"
+        data-theme="light"
+      ></div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </section>
 
   </article>
 </div>
