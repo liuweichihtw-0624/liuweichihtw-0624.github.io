@@ -18,6 +18,7 @@ kramdown:
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # RSS Feed settings
 feed:
