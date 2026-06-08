@@ -10,6 +10,17 @@
   <meta property="og:type"        content="website">
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
 
+  <!-- Google Analytics GA4 -->
+  {% if jekyll.environment == 'production' %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WDNH6KQ1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8WDNH6KQ1T');
+  </script>
+  {% endif %}
+
   <!-- Prevent dark-mode flash -->
   <script>
     (function(){
