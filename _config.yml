@@ -10,6 +10,8 @@ author:
   name_zh: 劉威志
   email: ""
 
+timezone: Asia/Taipei
+
 # Build settings
 markdown: kramdown
 kramdown:
