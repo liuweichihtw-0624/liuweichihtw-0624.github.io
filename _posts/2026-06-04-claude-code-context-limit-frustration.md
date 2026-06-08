@@ -6,6 +6,7 @@ tags: [AI, 個人成長, 知識管理, 科技]
 publish: true
 syndicate: [linkedin]
 excerpt: "使用Claude Code桌機版帶來效率提升，但Context限制導致記憶斷裂，需在Session間反覆搬遷整理。"
+description: "使用Claude Code桌機版帶來效率提升，但Context限制導致記憶斷裂，需在Session間反覆搬遷整理。"
 ---
 
 ## 初期的成就感

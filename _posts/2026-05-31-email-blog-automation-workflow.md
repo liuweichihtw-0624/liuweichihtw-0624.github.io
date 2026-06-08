@@ -6,6 +6,7 @@ tags: [知識管理, AI, 科技, 個人成長]
 publish: true
 syndicate: [linkedin]
 excerpt: "探討如何整合 Gmail、GitHub 與個人部落格，建立自動化發佈流程，以及在使用 AI 輔助工具時遇到的跨 session 記憶同步問題。"
+description: "探討如何整合 Gmail、GitHub 與個人部落格，建立自動化發佈流程，以及在使用 AI 輔助工具時遇到的跨 session 記憶同步問題。"
 ---
 
 ## 起點：串聯的野心

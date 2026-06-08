@@ -6,6 +6,7 @@ tags: [生活風格, 台北, 購物中心, 日常]
 publish: true
 syndicate: []
 excerpt: "從為了林聰明砂鍋魚頭而去，到發現南港Lalaport成為下班後散步的舒適去處。"
+description: "從為了林聰明砂鍋魚頭而去，到發現南港Lalaport成為下班後散步的舒適去處。"
 ---
 
 ## 從砂鍋魚頭開始的發現
