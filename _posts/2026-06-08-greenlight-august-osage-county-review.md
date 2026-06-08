@@ -56,7 +56,7 @@ description_en: "Greenlight Theatre's August in My Home, adapted from Tracy Lett
 
 但同時，我又好同情她。我又覺得我好愛她。
 
-因為她也讓我想起了我的嬤嬤——那些身體的疾病、那些疼痛、那些心痛、那些藥物成癮、那些無法控制的情緒發洩。當我看著她在舞台上的每一次失控，我都覺得我似乎可以理解背後的原因。
+因為她也讓我想起了我的媽媽——那些身體的疾病、那些疼痛、那些心痛、那些藥物成癮、那些無法控制的情緒發洩。當我看著她在舞台上的每一次失控，我都覺得我似乎可以理解背後的原因。
 
 ### 深層的同理與領悟
 
@@ -131,7 +131,7 @@ Honestly, I hated Wang Qiuang in that moment. I despised her behavioral patterns
 
 Yet simultaneously, I sympathized with her deeply. I felt I loved her.
 
-Because she also reminded me of my grandmother—the physical illness, the pain, the heartbreak, the medication addiction, the uncontrollable emotional outbursts. Watching every moment of her loss of control on stage, I felt I could understand the reasons behind it.
+Because she also reminded me of my mother—the physical illness, the pain, the heartbreak, the medication addiction, the uncontrollable emotional outbursts. Watching every moment of her loss of control on stage, I felt I could understand the reasons behind it.
 
 ### Deeper Empathy and Realization
 
