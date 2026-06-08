@@ -14,7 +14,7 @@ layout: default
         {% if page.syndicate and page.syndicate != empty %}
         <span class="post-syndicated">· 已散播 Syndicated</span>
         {% endif %}
-        <a href="#comments" class="post-comment-jump">💬 留言 Comments</a>
+        <a href="#comments" class="post-comment-jump" id="comment-count-link">💬 留言 Comments</a>
       </div>
 
       <h1 class="post-title">{{ page.title }}</h1>
@@ -85,6 +85,28 @@ layout: default
       </script>
       <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </section>
+
+<script>
+// ── 即時顯示留言數 ─────────────────────────────────────────
+(function() {
+  var pageId = encodeURIComponent("{{ page.url }}");
+  var appId  = "c467ab19-788f-45d8-8f25-d6b7ee9bef55";
+  var url    = "https://cusdis.com/api/open/comments?appId=" + appId + "&pageId=" + pageId;
+
+  fetch(url)
+    .then(function(r) { return r.json(); })
+    .then(function(json) {
+      var count = (json.data && json.data.commentCount) || 0;
+      var link  = document.getElementById("comment-count-link");
+      if (link) {
+        link.textContent = count > 0
+          ? "💬 " + count + " 則留言 Comments"
+          : "💬 留言 Comments";
+      }
+    })
+    .catch(function() { /* 靜默失敗，維持預設文字 */ });
+})();
+</script>
 
   </article>
 </div>
