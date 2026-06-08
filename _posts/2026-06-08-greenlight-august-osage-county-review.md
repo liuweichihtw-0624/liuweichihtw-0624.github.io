@@ -44,7 +44,7 @@ description_en: "Greenlight Theatre's August in My Home, adapted from Tracy Lett
 
 ### 一場複雜的情感碰撞
 
-整部劇對我來說就是鬧哄哄的——群戲不斷，激動不斷，衝突層疊。但最深刻的碰撞，來自於王琄飾演的長女。
+整部劇對我來說就是鬧哄哄的——群戲不斷，激動不斷，衝突層疊。但最深刻的碰撞，來自於王琄飾演的母親。
 
 當她歇斯底里地在舞台上咆哮時，我以為看到的是——我媽。
 
@@ -119,7 +119,7 @@ Interestingly, that father who leaves early and never reappears on stage (played
 
 ### A Complex Emotional Collision
 
-For me, the entire play was chaotic—ensemble scenes relentless, emotions heightened, conflicts cascading. But the deepest collision came from Wang Qiuang's portrayal of the eldest daughter.
+For me, the entire play was chaotic—ensemble scenes relentless, emotions heightened, conflicts cascading. But the deepest collision came from Wang Qiuang's portrayal of the mother.
 
 When she became hysterical and howling on stage, I thought I was watching—my mother.
 
