@@ -63,12 +63,6 @@ AI真正要落地，需要的不是雲端上的空泛討論，而是接地氣的
 大家在各自的專業領域中，又是如何面對機構的AI政策與實際工作需求的落差呢？歡迎在底下留言與我交流！
 
 ---
-
-**劉威志 Michael LIU**  
-liuweichih.tw@gmail.com  
-0915149876
-
----
 ---
 
 *English version below*
@@ -128,7 +122,3 @@ Only by facing up to these complex and repetitive low-level labors, introducing 
 How are you navigating the gap between your institution's AI policies and your actual work needs in your own field? I'd love to hear your thoughts in the comments below!
 
 ---
-
-**Michael LIU (劉威志)**  
-liuweichih.tw@gmail.com  
-0915149876
