@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "《鐵拳教育》觀後感：教育改變需要每個人的勇敢呼喊 · Reflections on Netflix's "Teach You a Lesson": Education Change Requires Everyone's Brave Voice"
+title: "《鐵拳教育》觀後感：教育改變需要每個人的勇敢呼喊 · Reflections on Netflix's 'Teach You a Lesson': Education Change Requires Everyone's Brave Voice"
 date: 2026-06-20 10:24:00 +0800
 tags: [人文, 個人成長, 教育議題, 影劇評論]
 publish: true
 syndicate: [linkedin]
 excerpt: "看完Netflix韓劇《鐵拳教育》，作者思考教育改變的艱難與必要，認為改革需要每個人在正直良善的道路上勇敢發聲。"
 description: "觀看Netflix韓劇《鐵拳教育》後的深度反思。作者探討這部劇如何將現代教育問題搬上檯面，從霸凌、校園暴力到親職教育，認為真正的教育改變需要社會各界的勇敢聲音與行動。"
-description_en: "Deep reflections after watching Netflix's "Teach You a Lesson." The author explores how this Korean drama brings modern education issues to the forefront—from bullying and campus violence to parenting—believing that genuine educational change requires brave voices from all sectors of society."
+description_en: "Deep reflections after watching Netflix's 'Teach You a Lesson.' The author explores how this Korean drama brings modern education issues to the forefront—from bullying and campus violence to parenting—believing that genuine educational change requires brave voices from all sectors of society."
 ---
 
 ## Netflix韓劇《鐵拳教育》觀後反思：改變需要每個人勇敢發聲
