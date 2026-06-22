@@ -22,18 +22,36 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
 
     {% if site.posts.size > 0 %}
 
-    <!-- 標籤篩選列 -->
-    {% assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
-    <div id="tag-filters" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-      <button class="tag-filter active" data-tag="all"
-        style="cursor:pointer;border:1px solid var(--primary);border-radius:999px;padding:0.25rem 0.85rem;font-size:0.8rem;background:var(--primary);color:#fff;">
+    <!-- 標籤雲 -->
+    {% assign all_tags_flat = site.posts | map: "tags" | join: "," | split: "," %}
+    {% assign all_tags_uniq = all_tags_flat | uniq | sort %}
+
+    <!-- 計算每個標籤的出現次數，輸出成 data 供 JS 讀取 -->
+    <div id="tag-count-data" style="display:none;"
+      data-counts="{
+        {% for tag in all_tags_uniq %}
+        {% assign tag_clean = tag | strip %}
+        {% if tag_clean != "" %}
+        {% assign count = 0 %}
+        {% for t in all_tags_flat %}{% if t == tag_clean %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
+        &quot;{{ tag_clean }}&quot;: {{ count }}{% unless forloop.last %},{% endunless %}
+        {% endif %}
+        {% endfor %}
+      }">
+    </div>
+
+    <div id="tag-filters" style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1.75rem;align-items:center;line-height:1.8;">
+      <button class="tag-filter active" data-tag="all" data-count="{{ site.posts.size }}"
+        style="cursor:pointer;border:1px solid var(--primary);border-radius:999px;padding:0.2rem 0.9rem;font-size:0.9rem;background:var(--primary);color:#fff;font-weight:600;">
         全部 All
       </button>
-      {% for tag in all_tags %}
+      {% for tag in all_tags_uniq %}
       {% assign tag_clean = tag | strip %}
       {% if tag_clean != "" %}
-      <button class="tag-filter" data-tag="{{ tag_clean }}"
-        style="cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:0.25rem 0.85rem;font-size:0.8rem;background:transparent;color:var(--text-secondary);">
+      {% assign count = 0 %}
+      {% for t in all_tags_flat %}{% if t == tag_clean %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
+      <button class="tag-filter" data-tag="{{ tag_clean }}" data-count="{{ count }}"
+        style="cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:0.2rem 0.75rem;background:transparent;color:var(--text-secondary);">
         {{ tag_clean }}
       </button>
       {% endif %}
@@ -85,12 +103,34 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
   (function () {
     const INITIAL_SHOW = 10;
     const cards = Array.from(document.querySelectorAll('#post-list .post-card'));
-    const filterBtns = document.querySelectorAll('.tag-filter');
+    const filterBtns = Array.from(document.querySelectorAll('.tag-filter'));
     const showMoreBtn = document.getElementById('show-more-btn');
     const countLabel = document.getElementById('post-count-label');
     let currentTag = 'all';
     let visibleCount = INITIAL_SHOW;
 
+    // ── 標籤雲：依出現次數設定字體大小 ──────────────────────
+    const counts = filterBtns
+      .filter(b => b.dataset.tag !== 'all')
+      .map(b => parseInt(b.dataset.count) || 1);
+    const minCount = Math.min(...counts);
+    const maxCount = Math.max(...counts);
+    const minSize = 0.75;  // rem，最小字體
+    const maxSize = 1.25;  // rem，最大字體
+
+    filterBtns.forEach(btn => {
+      if (btn.dataset.tag === 'all') return;
+      const count = parseInt(btn.dataset.count) || 1;
+      const ratio = maxCount === minCount ? 0.5
+        : (count - minCount) / (maxCount - minCount);
+      const size = minSize + ratio * (maxSize - minSize);
+      const opacity = 0.6 + ratio * 0.4;
+      btn.style.fontSize = size.toFixed(2) + 'rem';
+      btn.style.opacity = opacity.toFixed(2);
+      btn.title = `${count} 篇`;
+    });
+
+    // ── 篩選與顯示邏輯 ───────────────────────────────────────
     function getFilteredCards() {
       if (currentTag === 'all') return cards;
       return cards.filter(c => {
@@ -129,6 +169,7 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
         btn.style.background = 'var(--primary)';
         btn.style.color = '#fff';
         btn.style.borderColor = 'var(--primary)';
+        btn.style.opacity = '1';
         btn.classList.add('active');
         render();
       });
