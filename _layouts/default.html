@@ -47,6 +47,38 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306865385800742" crossorigin="anonymous"></script>
   {% endif %}
 
+  <!-- JSON-LD 結構化資料 -->
+  {% unless page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}",
+        "name": "{{ site.title }}",
+        "description": {{ site.description | jsonify }},
+        "inLanguage": "zh-TW"
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": "{{ site.author.name }}",
+        "alternateName": "劉威志",
+        "url": "{{ site.url }}",
+        "sameAs": [
+          "https://www.linkedin.com/in/michaelweichihliu/",
+          "https://x.com/liuweichih0624",
+          "https://orcid.org/0000-0003-3449-5286",
+          "https://www.researchgate.net/profile/Michael-Wei-Chih-Liu"
+        ]
+      }
+    ]
+  }
+  </script>
+  {% endunless %}
+
   <!-- Prevent dark-mode flash -->
   <script>
     (function(){
