@@ -21,9 +21,29 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
     </div>
 
     {% if site.posts.size > 0 %}
-    <div class="post-list">
+
+    <!-- 標籤篩選列 -->
+    {% assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+    <div id="tag-filters" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+      <button class="tag-filter active" data-tag="all"
+        style="cursor:pointer;border:1px solid var(--primary);border-radius:999px;padding:0.25rem 0.85rem;font-size:0.8rem;background:var(--primary);color:#fff;">
+        全部 All
+      </button>
+      {% for tag in all_tags %}
+      {% assign tag_clean = tag | strip %}
+      {% if tag_clean != "" %}
+      <button class="tag-filter" data-tag="{{ tag_clean }}"
+        style="cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:0.25rem 0.85rem;font-size:0.8rem;background:transparent;color:var(--text-secondary);">
+        {{ tag_clean }}
+      </button>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- 文章清單 -->
+    <div class="post-list" id="post-list">
       {% for post in site.posts %}
-      <article class="post-card">
+      <article class="post-card" data-tags="{{ post.tags | join: ',' }}">
         <div class="post-card-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
           {% if post.tags and post.tags != empty %}
@@ -43,6 +63,16 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
       </article>
       {% endfor %}
     </div>
+
+    <!-- 顯示更多按鈕 -->
+    <div id="show-more-wrap" style="text-align:center;margin-top:1.5rem;">
+      <button id="show-more-btn" class="btn btn-secondary"
+        style="display:none;">
+        顯示更多文章 Load More
+      </button>
+      <p id="post-count-label" style="font-size:0.8rem;color:var(--text-muted);margin-top:0.75rem;"></p>
+    </div>
+
     {% else %}
     <div class="card" style="opacity:0.7;">
       <p style="color:var(--text-secondary);">第一篇文章即將發表。</p>
@@ -50,6 +80,68 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
     </div>
     {% endif %}
   </section>
+
+  <script>
+  (function () {
+    const INITIAL_SHOW = 10;
+    const cards = Array.from(document.querySelectorAll('#post-list .post-card'));
+    const filterBtns = document.querySelectorAll('.tag-filter');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    const countLabel = document.getElementById('post-count-label');
+    let currentTag = 'all';
+    let visibleCount = INITIAL_SHOW;
+
+    function getFilteredCards() {
+      if (currentTag === 'all') return cards;
+      return cards.filter(c => {
+        const tags = c.dataset.tags ? c.dataset.tags.split(',').map(t => t.trim()) : [];
+        return tags.includes(currentTag);
+      });
+    }
+
+    function render() {
+      const filtered = getFilteredCards();
+      cards.forEach(c => c.style.display = 'none');
+      filtered.forEach((c, i) => {
+        c.style.display = i < visibleCount ? '' : 'none';
+      });
+      const remaining = filtered.length - visibleCount;
+      if (remaining > 0) {
+        showMoreBtn.style.display = 'inline-block';
+        showMoreBtn.textContent = `顯示更多文章 Load More（還有 ${remaining} 篇）`;
+      } else {
+        showMoreBtn.style.display = 'none';
+      }
+      const shown = Math.min(visibleCount, filtered.length);
+      countLabel.textContent = `顯示 ${shown} / ${filtered.length} 篇`;
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentTag = btn.dataset.tag;
+        visibleCount = INITIAL_SHOW;
+        filterBtns.forEach(b => {
+          b.style.background = 'transparent';
+          b.style.color = 'var(--text-secondary)';
+          b.style.borderColor = 'var(--border)';
+          b.classList.remove('active');
+        });
+        btn.style.background = 'var(--primary)';
+        btn.style.color = '#fff';
+        btn.style.borderColor = 'var(--primary)';
+        btn.classList.add('active');
+        render();
+      });
+    });
+
+    showMoreBtn.addEventListener('click', () => {
+      visibleCount += INITIAL_SHOW;
+      render();
+    });
+
+    render();
+  })();
+  </script>
 
   <div class="divider"></div>
 
