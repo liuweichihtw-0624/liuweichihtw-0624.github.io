@@ -64,6 +64,12 @@ layout: default
     <div class="post-content">
       {{ content }}
     </div>
+    <script>
+    document.querySelectorAll('.post-content img').forEach(function(img) {
+      img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
+    });
+    </script>
 
     <!-- ── Post Footer ───────────────────────────────────── -->
     <footer class="post-footer">
