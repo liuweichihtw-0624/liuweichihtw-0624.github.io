@@ -42,6 +42,11 @@
   </script>
   {% endif %}
 
+  <!-- Google AdSense -->
+  {% if jekyll.environment == 'production' %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306865385800742" crossorigin="anonymous"></script>
+  {% endif %}
+
   <!-- Prevent dark-mode flash -->
   <script>
     (function(){
