@@ -2,7 +2,7 @@
 layout: post
 title: "2026 INAHTA 國際大會 Day 2 核心洞見：AI 治理與全生命週期醫療科技評估 · INAHTA 2026 Day 2 Core Insights: AI Governance and Lifecycle Health Technology Assessment"
 date: 2026-06-12 08:28:37 +0800
-tags: [HTA, AI治理, 醫療科技評估, 醫療政策, 知識管理]
+tags: ["AI 治理", "醫療科技評估 (HTA)", "全生命週期評估", "AI 幻覺風險", "合成證據", "智財權保護"]
 publish: true
 syndicate: []
 excerpt: "INAHTA大會第二天聚焦AI實務挑戰與全生命週期HTA，各國代表共識：跨國合作與統一規範，才能在擁抱創新的同時守護科學嚴謹。"
