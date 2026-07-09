@@ -2,7 +2,7 @@
 layout: post
 title: 從零開始，一步一步把自己放上網路 · Building My Digital Home, Step by Step
 date: 2026-05-31 10:36:00 +0800
-tags:
+tags: ["個人網站", "數位身份", "AI協作", "建站紀錄", "內容遷移", "自我認識"]
   - 個人網站
   - AI協作
   - 建站紀錄
