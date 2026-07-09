@@ -2,7 +2,7 @@
 layout: post
 title: "當指定捐款變成單向通知——我與台灣某NGO的一日經歷 · When Designated Donations Become One-Way Notifications: My Experience with a Taiwan NGO"
 date: 2026-06-01 18:35:00 +0800
-tags: [公益治理, 人文, 個人成長, 捐款倫理]
+tags: ["NGO捐款治理", "捐款倫理", "透明度與問責", "指定捐款", "公益信任"]
 publish: true
 syndicate: [linkedin]
 excerpt: "長期定期定額捐款遭基金會單方面變更用途並暫停，引發對台灣NGO捐款治理透明度與問責制度的反思。"
