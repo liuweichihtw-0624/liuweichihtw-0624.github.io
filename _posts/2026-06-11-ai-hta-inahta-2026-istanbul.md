@@ -2,7 +2,7 @@
 layout: post
 title: "反思與洞見：2026 INAHTA 大會 Day 1 精彩回顧——當醫療科技評估遇上人工智慧 · Insights from INAHTA 2026 Istanbul Day 1: Health Technology Assessment Meets Artificial Intelligence"
 date: 2026-06-11 10:49:22 +0800
-tags: [HTA, AI, 醫療科技評估, 人工智慧, 醫療政策, 知識管理, 科技]
+tags: ["INAHTA", "HTA", "人工智慧", "醫療科技評估", "AI素養", "資料安全"]
 publish: true
 syndicate: []
 excerpt: "虛擬參與 INAHTA 2026 大會，聚焦 AI 與全生命週期 HTA 的挑戰與機遇。AI 應用的務實策略、資料安全與個人素養的拉扯，以及跨國合作的迫切性，是第一天討論的核心焦點。"
