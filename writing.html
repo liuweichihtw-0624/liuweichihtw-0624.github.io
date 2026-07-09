@@ -109,6 +109,15 @@ description: "Michael Wei-Chih Liu 的文章、寫作平台與典藏。"
     let currentTag = 'all';
     let visibleCount = INITIAL_SHOW;
 
+    // ── 標籤排序：中文在前，英文在後 ────────────────────────
+    const tagContainer = document.getElementById('tag-filters');
+    const allBtn = filterBtns.find(b => b.dataset.tag === 'all');
+    const otherBtns = filterBtns.filter(b => b.dataset.tag !== 'all');
+    const isChinese = s => /[一-鿿㐀-䶿]/.test(s.charAt(0));
+    const zhBtns = otherBtns.filter(b => isChinese(b.dataset.tag));
+    const enBtns = otherBtns.filter(b => !isChinese(b.dataset.tag));
+    [allBtn, ...zhBtns, ...enBtns].forEach(b => tagContainer.appendChild(b));
+
     // ── 標籤雲：依出現次數設定字體大小 ──────────────────────
     const counts = filterBtns
       .filter(b => b.dataset.tag !== 'all')
