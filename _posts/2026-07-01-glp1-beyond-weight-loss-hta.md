@@ -2,7 +2,7 @@
 layout: post
 title: "GLP-1藥物真的與眾不同嗎？從臨床、經濟到政策的三維度剖析 · Is GLP-1 Really Different? A Clinical, Economic, and Policy Perspective"
 date: 2026-07-01 11:11:25 +0800
-tags: [HTA, 醫療政策, 醫療經濟學, 藥物評估]
+tags: ["GLP-1藥物", "醫療科技評估", "健保政策", "成本效益分析", "肥胖管理", "心血管疾病預防"]
 publish: true
 syndicate: []
 excerpt: "GLP-1藥物不只是減重神藥，更是抗發炎代謝藥物。面對50億澳幣的預算衝擊與健保給付困境，如何在臨床療效、經濟成本與政策公平間取得平衡？"
