@@ -2,7 +2,7 @@
 layout: post
 title: "我到底怎樣可以做好？在家庭照顧與人生困境中尋找意義 · How Can I Do Better? Finding Meaning Amid Family Caregiving Crisis and Life's Struggles"
 date: 2026-06-29 08:14:00 +0800
-tags: [人文, 個人成長, 家庭照顧, 心理健康, 公益]
+tags: ["家庭照顧", "失智症照顧", "心理困境", "經濟壓力", "照顧者身心健康"]
 publish: true
 syndicate: []
 excerpt: "在喧鬧世界中被迫承擔照顧責任，面對經濟困境與家庭關係的重重壓力，我究竟該如何自處？"
