@@ -2,7 +2,7 @@
 layout: post
 title: "理想很豐滿，現實很骨感？快速與迷你醫療科技評估的十年體檢 · The Gap Between Ideal and Reality: A Decade Review of Rapid and Mini Health Technology Assessments"
 date: 2026-07-02 14:52:16 +0800
-tags: [醫療科技評估, HTA, 醫療政策, 實證醫學, 健康經濟學]
+tags: ["醫療科技評估", "HTA", "快速評估", "迷你醫療科技評估", "經濟評估", "系統性文獻回顧"]
 publish: true
 syndicate: []
 excerpt: "McLaughlin et al. (2026) 對全球 203 份快速與迷你醫療科技評估報告進行大規模體檢，揭露理論與現實的巨大落差：經濟評估缺席、方法學捷徑、透明度不足。"
