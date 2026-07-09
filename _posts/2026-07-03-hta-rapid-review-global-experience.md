@@ -2,7 +2,7 @@
 layout: post
 title: "從理論到實戰：HTAi 線上研討會精彩回顧與全球醫療科技評估真實經驗分享 · From Theory to Practice: HTAi Webinar Highlights and Global Health Technology Assessment Real-World Experience"
 date: 2026-07-03 12:43:16 +0800
-tags: [醫療科技評估, HTA, 醫療政策, 實證醫學, 決策制定, 全球經驗]
+tags: ["HTA", "醫療科技評估", "HTAi", "快速評估", "真實世界證據", "附條件給付"]
 publish: true
 syndicate: []
 excerpt: "HTAi 線上研討會深入探討全球醫療科技評估機構如何在時間壓力、資源限制與科學嚴謹度間取得平衡，來自菲律賓、烏拉圭、阿布達比的實戰經驗值得借鏡。"
