@@ -2,7 +2,7 @@
 layout: post
 title: "透過 Email 發送部落格貼文：自動化流程的實驗與反思 · Sending Blog Posts via Email: Experiments and Reflections on Automation Workflows"
 date: 2026-05-31 13:27:00 +0800
-tags: ["自動化流程", "Email 自動化", "GitHub", "AI 協作", "部落格發佈", "知識管理系統"]
+tags: ["自動化流程", "Email自動化", "AI協作", "部落格發佈", "AI collaboration", "workflow automation", "knowledge management"]
 publish: true
 syndicate: [linkedin]
 excerpt: "探討如何整合 Gmail、GitHub 與個人部落格，建立自動化發佈流程，以及在使用 AI 輔助工具時遇到的跨 session 記憶同步問題。"
