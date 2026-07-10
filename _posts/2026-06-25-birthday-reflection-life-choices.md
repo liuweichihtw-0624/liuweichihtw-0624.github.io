@@ -2,7 +2,7 @@
 layout: post
 title: "結束與開始：關於生命選擇的生日思考 · Endings and Beginnings: Birthday Reflections on Life Choices"
 date: 2026-06-25 10:44:07 +0800
-tags: ["生命選擇", "生育倫理", "反生育主義", "生命訂製時代", "生命權"]
+tags: ["生命選擇", "生日反思", "生育倫理", "反生主義", "birthday reflection", "life choices", "art exhibitions"]
 publish: true
 syndicate: []
 excerpt: "在50歲生日這天，經歷了美術館、電影、新書發表會，我對生命延續、生育自主權有了深刻的反思與結論。"
