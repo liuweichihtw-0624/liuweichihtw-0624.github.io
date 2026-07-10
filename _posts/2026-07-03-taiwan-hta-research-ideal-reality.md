@@ -2,7 +2,7 @@
 layout: post
 title: "在理想與現實的夾縫中：台灣醫療科技評估研究員的驕傲與執著 · Between Ideal and Reality: The Pride and Perseverance of Taiwan's HTA Researchers"
 date: 2026-07-03 12:58:00 +0800
-tags: ["HTA", "醫療科技評估", "健保給付決策", "科學證據", "國際標準", "台灣醫療政策"]
+tags: ["醫療科技評估", "科學證據", "健保給付決策", "health technology assessment", "HTA", "scientific evidence"]
 publish: true
 syndicate: [linkedin]
 excerpt: "HTAi研討會後的深刻反思：在資源限制與時間壓力下，台灣醫療科技評估團隊如何堅守科學證據底線，交出超越國際基本門檻的評估報告。"
