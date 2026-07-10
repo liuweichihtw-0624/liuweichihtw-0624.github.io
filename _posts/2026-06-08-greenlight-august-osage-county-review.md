@@ -2,7 +2,7 @@
 layout: post
 title: "《八月在我家》：綠光劇團的群戲之美與家族創傷的共鳴 · August in My Home: Greenlight Theatre's Ensemble Mastery and Family Trauma"
 date: 2026-06-08 12:41:39 +0800
-tags: ["舞台劇", "綠光劇團", "家族創傷", "群戲", "舞台設計", "《八月在我家》"]
+tags: ["劇場療癒", "家族創傷", "舞台設計", "母親", "theatre", "stage design", "ensemble performance", "family drama"]
 publish: true
 syndicate: [linkedin]
 excerpt: "看綠光劇團改編《八月在我家》，被王琄飾演的母親角色深深觸動，在舞台的家族風暴中看見自己與家人的故事。"
