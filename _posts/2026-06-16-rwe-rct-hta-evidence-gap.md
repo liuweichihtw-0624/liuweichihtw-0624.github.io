@@ -2,7 +2,7 @@
 layout: post
 title: "前瞻 HTA 人才培訓亮點回顧：當隨機對照試驗遇上真實世界證據，如何填補證據缺口？ · HTA Talent Training Highlights: Bridging the Gap Between RCT and Real-World Evidence"
 date: 2026-06-16 20:16:10 +0800
-tags: ["HTA", "RCT", "真實世界證據", "暫時性支付機制", "新藥給付評估"]
+tags: ["隨機對照試驗", "真實世界證據", "醫療科技評估", "暫時性支付機制", "HTA", "RCT", "RWE"]
 publish: true
 syndicate: []
 excerpt: "醫藥品查驗中心舉辦的 HTA 培訓課程，深入探討隨機對照試驗與真實世界證據的銜接，以及暫時性支付機制的實務運作。"
