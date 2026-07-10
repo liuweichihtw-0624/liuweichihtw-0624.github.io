@@ -2,7 +2,7 @@
 layout: post
 title: "名字裡有什麼？重溫醫療科技評估報告定義的基石與現實挑戰 · What's in a Name? Revisiting HTA Report Definitions: Foundations and Real-World Challenges"
 date: 2026-07-02 14:46:37 +0800
-tags: ["醫療科技評估", "HTA", "INAHTA", "快速審查", "迷你醫療科技評估", "證據品質"]
+tags: ["醫療科技評估", "INAHTA標準", "迷你評估與快速審查", "決策品質", "HTA report standards", "INAHTA", "health technology assessment"]
 publish: true
 syndicate: []
 excerpt: "十多年前的經典文獻《What's in a Name?》為全球醫療科技評估建立了定義標準。但如今現實與理論的落差究竟有多大？"
