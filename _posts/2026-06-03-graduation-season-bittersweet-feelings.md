@@ -2,7 +2,7 @@
 layout: post
 title: "這是畢業的季節，也是令人感傷的季節 · Graduation Season: A Bittersweet Time"
 date: 2026-06-03 15:10:43 +0800
-tags: ["畢業", "情感反思", "人生轉折", "療癒", "個人成長"]
+tags: ["畢業季", "畢業典禮", "成長歷程", "心理療癒", "graduation", "education", "personal reflection"]
 publish: true
 syndicate: []
 excerpt: "畢業本應是喜悅的時刻，卻讓我感到沮喪。每一場畢業典禮都喚起那些艱辛與傷感的回憶。"
