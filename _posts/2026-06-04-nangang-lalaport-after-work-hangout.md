@@ -2,7 +2,7 @@
 layout: post
 title: "南港Lalaport 現在是我的下班後好去處 · Nangang Lalaport: My New After-Work Destination"
 date: 2026-06-04 11:00:58 +0800
-tags: ["南港Lalaport", "下班後活動", "餐飲", "電影", "商場漫遊", "生活日常"]
+tags: ["南港Lalaport", "砂鍋魚頭", "逛街漫遊", "下班去處", "Nangang Lalaport", "shopping mall", "dining and entertainment"]
 publish: true
 syndicate: []
 excerpt: "從為了林聰明砂鍋魚頭而去，到發現南港Lalaport成為下班後散步的舒適去處。"
