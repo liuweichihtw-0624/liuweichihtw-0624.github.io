@@ -2,7 +2,7 @@
 layout: post
 title: "成也Context，敗也Context · The Double-Edged Sword of Context: Success and Frustration with Claude Code"
 date: 2026-06-04 12:40:45 +0800
-tags: ["Claude Code", "Context 限制", "提示詞工程", "工作流程優化", "記憶管理"]
+tags: ["Claude Code", "Context 限制", "記憶碎片化", "工作流程優化", "context memory limitations", "workflow optimization"]
 publish: true
 syndicate: [linkedin]
 excerpt: "使用Claude Code桌機版帶來效率提升，但Context限制導致記憶斷裂，需在Session間反覆搬遷整理。"
