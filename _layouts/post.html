@@ -52,10 +52,8 @@ layout: default
       {% endif %}
 
       {% if page.tags and page.tags != empty %}
-      <div class="post-tags">
-        {% for tag in page.tags %}
-        <span class="badge">{{ tag }}</span>
-        {% endfor %}
+      <div class="post-tags" id="post-tags-zh">
+        <!-- 中文 tag 由 JS 填入 -->
       </div>
       {% endif %}
     </header>
@@ -69,6 +67,59 @@ layout: default
       img.setAttribute('loading', 'lazy');
       img.setAttribute('decoding', 'async');
     });
+
+    // ── 中英文 tag 分流 ───────────────────────────────────
+    (function() {
+      var allTags = {{ page.tags | jsonify }};
+      if (!allTags || !allTags.length) return;
+
+      var isChinese = function(s) { return /[一-鿿㐀-䶿]/.test(s.charAt(0)); };
+      var zhTags = allTags.filter(isChinese);
+      var enTags = allTags.filter(function(t) { return !isChinese(t); });
+
+      // 中文 tag → header
+      var zhContainer = document.getElementById('post-tags-zh');
+      if (zhContainer) {
+        zhTags.forEach(function(t) {
+          var span = document.createElement('span');
+          span.className = 'badge';
+          span.textContent = t;
+          zhContainer.appendChild(span);
+        });
+        if (!zhTags.length) zhContainer.style.display = 'none';
+      }
+
+      // 英文 tag → 插入到 "*English version below*" 段落之前
+      if (!enTags.length) return;
+      var walker = document.createTreeWalker(
+        document.querySelector('.post-content'),
+        NodeFilter.SHOW_TEXT,
+        null, false
+      );
+      var node;
+      while ((node = walker.nextNode())) {
+        if (node.textContent.includes('English version below')) {
+          var enContainer = document.createElement('div');
+          enContainer.className = 'post-tags';
+          enContainer.style.marginBottom = '1rem';
+          enTags.forEach(function(t) {
+            var span = document.createElement('span');
+            span.className = 'badge';
+            span.textContent = t;
+            enContainer.appendChild(span);
+          });
+          // 插入到包含該文字的段落元素之前
+          var target = node.parentElement;
+          while (target && target.parentElement && !target.parentElement.classList.contains('post-content')) {
+            target = target.parentElement;
+          }
+          if (target && target.parentElement) {
+            target.parentElement.insertBefore(enContainer, target);
+          }
+          break;
+        }
+      }
+    })();
     </script>
 
     <!-- ── Post Footer ───────────────────────────────────── -->
