@@ -2,7 +2,7 @@
 layout: post
 title: "破解臨床試驗統計陷阱：次族群分析與存活曲線外推的醫療科技評估實戰指南 · Decoding Clinical Trial Statistics: Subgroup Analysis and Survival Extrapolation in Health Technology Assessment"
 date: 2026-06-16 20:17:16 +0800
-tags: ["HTA", "次族群分析", "存活曲線外推", "臨床試驗統計", "健保給付評估", "醫療科技評估"]
+tags: ["醫療科技評估", "臨床試驗", "存活曲線外推", "健保給付", "HTA", "clinical trial interpretation", "subgroup analysis", "comparator selection"]
 publish: true
 syndicate: []
 excerpt: "醫療科技評估人才培訓第二天深度解析：破解次族群分析陷阱、存活曲線外推迷思，建立批判性證據評讀能力。"
