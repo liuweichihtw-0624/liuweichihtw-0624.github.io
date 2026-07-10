@@ -2,7 +2,7 @@
 layout: post
 title: "從雲端回到凡間：基層 HTA 研究員對 AI 落地的真實告白與期盼 · From Cloud to Reality: A Frontline HTA Researcher's Honest Account and Hopes for AI Implementation"
 date: 2026-06-15 12:19:25 +0800
-tags: ["HTA", "AI落地", "醫療科技評估", "數位化", "基層研究", "政策執行落差"]
+tags: ["醫療科技評估", "AI治理", "工作流程優化", "數位化轉型", "Health Technology Assessment", "AI Implementation", "Healthcare Digitalization"]
 publish: true
 syndicate: [linkedin]
 excerpt: "作為基層HTA研究員，面對AI狂潮時感到既近又遠。不是AI不重要，而是缺乏自下而上的實作規劃與受控的內部環境。"
